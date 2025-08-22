@@ -23,7 +23,6 @@ def attatch_text_to_all_paths():
     
 
     for page in range(1, scribus.pageCount() + 1):
-        print(page)
         scribus.gotoPage(page)
         for item in scribus.getPageItems():
             print(item)
